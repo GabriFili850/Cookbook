@@ -7,6 +7,7 @@ const App = () => {
   const APP_KEY = "e2b884a702c9d17c60ecb553245bcd23";
 
   const [recipes, setRecipes] = useState([]);
+  const [search, setSearch] = useState('');
 
   useEffect( () => {
     getRecipes();
@@ -26,7 +27,7 @@ const App = () => {
   return (
     <div className="App">
       <form className="search-form">
-        <input className="search-bar" type="text" />
+        <input className="search-bar" type="text" value={search}/>
         <button className="serch-button" type="submit">
           Search
         </button>

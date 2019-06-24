@@ -19,6 +19,8 @@ const App = () => {
 
     const data = await response.json();
     setRecipes(data.hits);  
+    console.log(data.hits);
+    
   }
 
   return (
@@ -29,6 +31,14 @@ const App = () => {
           Search
         </button>
       </form>
+      {recipes.map(recipe => (
+        //use .map because recepies is an array and i need to map all the objects, and i need to use a parenthesis because i want to return html/jsx
+        <Recipe
+          title={recipe.recipe.label}
+          calories={recipe.recipe.calories}
+          image={recipe.recipe.image}
+        />
+      ))}
     </div>
   );
 };

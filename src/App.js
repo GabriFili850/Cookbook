@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import "./App.css";
 import Recipe from './components/Recipe';
+import Header from "./components/Header";
+import Button from './components/Button';
 
 const App = () => {
   const APP_ID = "e68ea2e3";
@@ -38,11 +39,10 @@ const App = () => {
 
   return (
     <div className="App">
+      <Header />
       <form onSubmit={getSearch} className="search-form">
         <input className="search-bar" type="text" value={search} onChange={updateSearch} />
-        <button className="serch-button" type="submit">
-          Search
-        </button>
+        <Button />
       </form>
       {recipes.map(recipe => (
         //use .map because recepies is an array and i need to map all the objects, and i need to use a parenthesis because i want to return html/jsx

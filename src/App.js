@@ -41,7 +41,6 @@ const App = () => {
 
   return (
     <div className="App">
-      <Header />
       <form onSubmit={getSearch} className="search-form">
         <input className="search-bar" type="text" value={search} onChange={updateSearch} />
         <SearchButton />

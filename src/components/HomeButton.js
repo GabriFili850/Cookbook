@@ -1,8 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 
 const HomeButton = () => (
     <button className="home-button" type="submit">
-      LET'S COOK
+      <Link to="/recipe/search">LET'S COOK</Link>
     </button>
 )
 

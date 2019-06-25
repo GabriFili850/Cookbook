@@ -21,15 +21,15 @@ const App = () => {
       );
 
     const data = await response.json();
-    setRecipes(data.hits);  
+    setRecipes(data.hits);
     console.log(data.hits);
-    
+
   }
 
   const updateSearch = e => {
     setSearch(e.target.value);
     console.log(search);
-    
+
   }
 
   const getSearch = e => {

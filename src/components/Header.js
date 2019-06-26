@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Header = () => (
-  <header className="App-header navbar-dark">
+  <header className="App-header">
     <h1 className="App-title">CookBook</h1>
   </header>
 )

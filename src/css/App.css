@@ -29,28 +29,24 @@
   flex-wrap: wrap;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.content-wrapper {
+  width: 80%;
+  margin: 4% 10% 5% 10%;
 }
 
-.App-title {
-  color: white;
+.content-wrapper img {
+  width: 100%;
 }
 
-.Home {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.text-wrapper {
+  width: 100%;
+  position: relative;
+  margin-top: -40%;
+}
+
+.text-wrapper h1 {
+  text-align: center;
+  color: #3b3749;
+  font-size: 10vw;
+  font-family: 'lobster', cursive;
 }

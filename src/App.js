@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import './css/App.css';
 
 import Recipe from './components/Recipe';
-import Header from "./components/Header";
 import SearchButton from './components/SearchButton';
 
 const App = () => {
@@ -19,7 +18,7 @@ const App = () => {
 
   const getRecipes = async () => {
     const response = await fetch(
-      `https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}&from=0&to=10&calories=591-722&health=alcohol-free`
+      `https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}&from=0&to=12&calories=591-722&health=alcohol-free`
       );
 
     const data = await response.json();

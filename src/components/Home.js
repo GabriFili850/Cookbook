@@ -1,12 +1,14 @@
 import React from 'react';
 import HomeButton from './HomeButton';
+import CookBook_photo from './Cookbook_photo.jpg'
 
 const Home = () => (
-    <header className="Home navbar-dark">
-      <h1 className="Home-title">CookBook</h1>
-      <br/>
-      <HomeButton />
-    </header>
+    <div className="Home content-wrapper">
+      <img src={CookBook_photo} />
+      <div class="text-wrapper">
+      <h1 className="Home-title"><HomeButton /></h1>
+      </div>
+    </div>
   )
 
 export default Home;

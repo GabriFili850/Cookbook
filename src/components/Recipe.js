@@ -2,17 +2,23 @@ import React from 'react';
 
 const Recipe = ({title,source,image,ingredients,url}) => {
     return (
-      <div>
-        <h1>{title}</h1>
-          <ol>
-            {ingredients.map(ingredient =>(
-                <li>{ingredient.text}</li>
-                ))}
-          </ol>
-            <img src={image} alt=""/>
-          <h6>Source: {source}</h6>
-          <p>{url}</p>
-      </div>
+          <div className="col-md-4" style={{ marginBottom:"2rem" }}>
+            <h1 className="recipes__title">
+              {title.length < 20 ? `${title}` : `${title.substring(0, 25)}...` }
+            </h1>
+                <img src={image} alt=""/>
+                <ol>
+                {ingredients.map(ingredient =>(
+                    <li>{ingredient.text}</li>
+                    ))}
+              </ol>
+              <h6>Source: {source}</h6>
+              <p>
+                <a href={url}>
+                  {url}
+                </a>
+              </p>
+          </div>
   );
 };
 

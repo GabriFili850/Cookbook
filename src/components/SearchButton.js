@@ -1,8 +1,8 @@
 import React from 'react';
 
 const SearchButton = () => (
-    <button className="search-button" type="submit">
-      Search
+  <button className="search-button" type="submit">
+    Search
     </button>
 )
 

@@ -7,7 +7,7 @@ import SearchButton from './components/SearchButton';
 
 const App = () => {
   const APP_ID = "e68ea2e3";
-  const APP_KEY = "e2b884a702c9d17c60ecb553245bcd23";
+  const APP_KEY = "bda9af87fac7c826646fc8da562b97a3";
 
   const [recipes, setRecipes] = useState([]);
   const [search, setSearch] = useState('');
